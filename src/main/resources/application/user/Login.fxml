@@ -17,10 +17,55 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #112;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
-      <AnchorPane fx:id="forgot_password_anchorpane" layoutX="4.0" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #112;" />
+      <AnchorPane fx:id="forgot_password_anchorpane" layoutX="4.0" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #112;">
+         <children>
+            <HBox alignment="CENTER" layoutX="21.0" layoutY="22.0" spacing="5.0">
+               <children>
+                  <ImageView fx:id="logo2" fitHeight="58.0" fitWidth="118.0" onMouseClicked="#switchToHome" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/animated/animated.gif" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="JetStream">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <VBox layoutX="416.0" layoutY="147.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="406.0" prefWidth="368.0" spacing="10.0">
+               <children>
+                  <VBox spacing="20.0">
+                     <children>
+                        <Label text="Enter your email" textFill="WHITE" />
+                        <TextField prefHeight="36.0" prefWidth="260.0" promptText="email" />
+                        <Button mnemonicParsing="false" prefHeight="42.0" prefWidth="368.0" style="-fx-background-color: #6BCB77;" text="Send verification code" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Label opacity="0.0" text="SEPARATOR" textFill="#e7ff00" />
+                        <Label text="Enter 6 digit number" textFill="WHITE" />
+                        <TextField prefHeight="36.0" prefWidth="260.0" promptText="6 digit number" />
+                        <Button mnemonicParsing="false" prefHeight="42.0" prefWidth="368.0" style="-fx-background-color: #6BCB77;" text="Get new password" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Label opacity="0.0" text="SEPARATOR" textFill="#e7ff00" />
+                        <Button mnemonicParsing="false" onAction="#bringLoginToFront" prefHeight="42.0" prefWidth="368.0" style="-fx-background-color: #4193C7;" text="Back to login" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children></AnchorPane>
       <AnchorPane fx:id="login_anchorpane" layoutX="4.0" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #112;">
          <children>
-            <VBox layoutX="444.0" layoutY="172.0" prefHeight="406.0" prefWidth="368.0" spacing="10.0">
+            <VBox layoutX="416.0" layoutY="164.0" prefHeight="406.0" prefWidth="368.0" spacing="10.0">
                <children>
                   <TextField fx:id="login_email" prefHeight="36.0" prefWidth="260.0" promptText="email" text="jetstream@gmail.com" />
                   <PasswordField fx:id="login_pass" onKeyTyped="#showPassFieldLogin" prefHeight="36.0" prefWidth="260.0" promptText="password" text="jetstream09" />
@@ -31,7 +76,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </CheckBox>
-                        <Button fx:id="forgot_password_login" mnemonicParsing="false" onAction="#showPassword" style="-fx-background-color: #112;" text="Forget your password?" textFill="WHITE" />
+                        <Button fx:id="forgot_password_login" mnemonicParsing="false" onAction="#showPassword" style="-fx-background-color: #112;" text="Forget your password?" textFill="WHITE" underline="true" />
                      </children>
                   </HBox>
                   <VBox prefHeight="235.0" prefWidth="368.0">
@@ -88,8 +133,11 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button layoutX="1067.0" layoutY="644.0" mnemonicParsing="false" onAction="#switchToForgotPassword" opacity="0.0" text="Forgot Password" />
-            <Label layoutX="586.0" layoutY="97.0" text="Login" textFill="WHITE">
+            <Button layoutX="599.0" layoutY="259.0" mnemonicParsing="false" onAction="#bringForgotPasswordToFront" opacity="0.0" prefHeight="25.0" prefWidth="130.0" text="Forgot Password">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Label layoutX="558.0" layoutY="89.0" text="Login" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="32.0" />
                </font>
