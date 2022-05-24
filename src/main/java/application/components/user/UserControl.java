@@ -49,7 +49,7 @@ public class UserControl {
                 User user = controller.db.authenticationUser(controller.login_email.getText(), controller.login_pass.getText());
                 if (user != null) {
                     controller.renderDashboard(e, user);
-                    controller.login_loader_flight.setVisible(true); // set loader to true
+                    //controller.login_loader_flight.setVisible(true); // set loader to true
                     controller.playSystemSound("Login", "sounds/login.wav");
                     try {
                         controller.profile_image_preview_imageview.setImage(controller.db.getProfilePicture(user));
