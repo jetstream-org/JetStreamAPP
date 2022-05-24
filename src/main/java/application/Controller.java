@@ -48,8 +48,8 @@ public class Controller {
 
     //<editor-fold desc="========= GLOBAL VARIABLES =========" >
     //<editor-fold desc="======== LOGIN WINDOW VARIABLES ========">
-    @FXML public TextField login_pass, login_email, show_password_field_login;
-    @FXML public Label error_message_lbl, success_msg_lbl; // ERRORS HANDLER
+    @FXML public TextField login_pass, login_email;
+    @FXML public Label error_message_lbl, success_msg_lbl, show_password_field_login; // ERRORS HANDLER
     @FXML private Button forgot_password_login;
     @FXML public AnchorPane login_anchorpane, forgot_password_anchorpane;
     @FXML public CheckBox show_pasword_login;
