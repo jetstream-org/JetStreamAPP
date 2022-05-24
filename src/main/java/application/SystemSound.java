@@ -5,7 +5,7 @@ import javafx.scene.media.MediaPlayer;
 
 /**
  * This class runs on its thread to play a system sound when a specific button is clicked.
- * System sound informs the user of an action (e.g. error message, success message, ...).
+ * System sounds informs the user of an action (e.g. error message, success message, ...).
  * @author Sossio.
  */
 public class SystemSound implements Runnable {

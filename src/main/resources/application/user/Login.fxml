@@ -69,6 +69,10 @@
                <children>
                   <TextField fx:id="login_email" prefHeight="36.0" prefWidth="260.0" promptText="email" text="jetstream@gmail.com" />
                   <PasswordField fx:id="login_pass" onKeyTyped="#showPassFieldLogin" prefHeight="36.0" prefWidth="260.0" promptText="password" text="jetstream09" />
+                  <Label fx:id="show_password_field_login" prefHeight="20.0" prefWidth="206.0" textFill="#ff7000">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
                   <HBox alignment="CENTER_LEFT" spacing="70.0">
                      <children>
                         <CheckBox fx:id="show_pasword_login" mnemonicParsing="false" onAction="#showPassFieldLogin" stylesheets="@../Styles/checkbox.css" text="Show password" textFill="WHITE">
@@ -127,16 +131,17 @@
                </children>
             </HBox>
             <Label fx:id="success_msg_lbl" layoutX="513.0" layoutY="50.0" prefHeight="17.0" prefWidth="231.0" textFill="#3dee46" />
-            <Label fx:id="error_message_lbl" layoutX="445.0" layoutY="578.0" prefHeight="17.0" prefWidth="368.0" textFill="#d74141" />
+            <Label fx:id="error_message_lbl" layoutX="417.0" layoutY="578.0" prefHeight="17.0" prefWidth="368.0" textFill="#d74141" />
             <Button layoutX="21.0" layoutY="22.0" mnemonicParsing="false" onAction="#switchToHome" opacity="0.0" prefHeight="73.0" prefWidth="137.0" style="-fx-background-color: #f87000;" text="Back to Home" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button layoutX="599.0" layoutY="259.0" mnemonicParsing="false" onAction="#bringForgotPasswordToFront" opacity="0.0" prefHeight="25.0" prefWidth="130.0" text="Forgot Password">
+            <Button layoutX="599.0" layoutY="289.0" mnemonicParsing="false" onAction="#bringForgotPasswordToFront" opacity="0.0" prefHeight="25.0" prefWidth="130.0" text="Forgot Password">
                <cursor>
                   <Cursor fx:constant="HAND" />
-               </cursor></Button>
+               </cursor>
+            </Button>
             <Label layoutX="558.0" layoutY="89.0" text="Login" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="32.0" />
