@@ -46,7 +46,7 @@
                         </Button>
                         <Label opacity="0.0" text="SEPARATOR" textFill="#e7ff00" />
                         <Label text="Enter 6 digit number" textFill="WHITE" />
-                        <TextField prefHeight="36.0" prefWidth="260.0" promptText="6 digit number" />
+                        <TextField fx:id="forgon_pwd_6_digits" prefHeight="36.0" prefWidth="260.0" promptText="6 digit number" />
                         <Button mnemonicParsing="false" prefHeight="42.0" prefWidth="368.0" style="-fx-background-color: #6BCB77;" text="Get new password" textFill="WHITE">
                            <cursor>
                               <Cursor fx:constant="HAND" />
