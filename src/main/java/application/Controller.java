@@ -328,8 +328,8 @@ public class Controller {
      * @param e event.
      * @author Sossio.
      */
-    public void switchToForgotPassword(ActionEvent e) {
-        forgot_password_login.toFront();
+    public void bringForgotPasswordToFront(ActionEvent e) {
+        forgot_password_anchorpane.toFront();
     }
 
     /**
