@@ -10,7 +10,7 @@ A desktop based flight application with an intractive world map and geolocation 
 The application's main goal is to serve individer with thier bookning flight in a very easy way.
 Java support javaFX as a tool that build desktop, mobile and other platform application. Therefore we used this powerful tool to build our gui as well as our front-end part.
 
-<h1>Sample:</h1>
+<h1>Sample: (note that sample is image of old verion!)</h1>
 <p>
     
   <img src="https://i.gyazo.com/667fc3e73cc475cb4c8ac2d6ef24dfd6.gif" width="400" />
