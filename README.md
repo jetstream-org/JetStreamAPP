@@ -29,11 +29,13 @@ Java support javaFX as a tool that build desktop, mobile and other platform appl
 <h1>How to start with application </h1>
 
 <h3>Step 1. </h3>
-<span>Open jetstream project with intelliJ IDE.</span>
+<span>Copy this link: https://github.com/jetstream-org/JetStreamAPP.git open the terminal and run script: git clone <link>.</span>
+<span>After cloning the project open directory with intelliJ IDE.</span>
+
 
 
 <h3>Step 2. </h3>
-<span>Wait for the project to load. Then click “Load Gradle Project” in the bottom right.</span>
+<span>Wait for the project to load. Then click “Load Gradle Project” in the bottom right corner.</span>
 
 
 <h3>Step 3. </h3>
