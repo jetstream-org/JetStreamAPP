@@ -1,7 +1,7 @@
 
 <div style="border:5px dotted #ffcc00" class="div">
   <img width="60" alt="jetstream" src="https://user-images.githubusercontent.com/51061202/167385701-460f2213-b037-4f38-bce5-6a361ca32699.png">
- <p>Version: 0.12.8</p>
+ <p>Version: 0.18.5</p>
   <h1>JetStream </h1> 
  
 </div>
